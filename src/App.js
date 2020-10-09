@@ -40,7 +40,7 @@ function App() {
                   <AboutWithTransition
                     {...props}
                     next="/experience"
-                    prev="/interests"
+                    prev="/skills"
                   />
                 );
               }}
