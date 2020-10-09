@@ -8,7 +8,16 @@ function NavbarComponents() {
       id="sideNav"
     >
       <NavLink className="navbar-brand js-scroll-trigger" to="/">
-        <span className="d-block d-lg-none text-uppercase">Imam Saiquit</span>
+        <span className="d-block d-lg-none text-uppercase">
+          <span>
+            <img
+              className="phone-nav rounded-circle mx-auto mb-2"
+              src="https://i.ibb.co/n1JQvtq/file2.jpg"
+              alt=""
+            />
+          </span>
+          Imam Saiquit
+        </span>
         <span className="d-none d-lg-block">
           <img
             className="img-fluid img-profile rounded-circle mx-auto mb-2"

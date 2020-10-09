@@ -432,7 +432,7 @@ h6,
 .lead {
   font-size: 1.75rem;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
 }
 
 .display-1 {
@@ -10656,4 +10656,9 @@ section.resume-section .resume-section-content {
 .card__image:hover img {
   transform: translateY(calc(-100% + 200px));
   transition: transform 5s ease-in-out;
+}
+.phone-nav {
+  width: 25px;
+  margin-right: 25px !important;
+  margin: 8px 5px;
 }
