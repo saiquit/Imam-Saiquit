@@ -55,11 +55,11 @@ function NavbarComponents() {
               Skills
             </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink className="nav-link js-scroll-trigger" to="/interests">
               Interests
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

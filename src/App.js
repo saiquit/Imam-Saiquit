@@ -13,14 +13,14 @@ const About = React.lazy(() => import("./components/About"));
 const Experience = React.lazy(() => import("./components/Experience"));
 const Education = React.lazy(() => import("./components/Education"));
 const Skills = React.lazy(() => import("./components/Skills"));
-const Interest = React.lazy(() => import("./components/Interests"));
+// const Interest = React.lazy(() => import("./components/Interests"));
 const Works = React.lazy(() => import("./components/Works"));
 // withTransition
 const AboutWithTransition = WithAnimation(About);
 const ExperienceWithTransition = WithAnimation(Experience);
 const EducationWithTransition = WithAnimation(Education);
 const SkillsWithTransition = WithAnimation(Skills);
-const InterestsWithTransition = WithAnimation(Interest);
+// const InterestsWithTransition = WithAnimation(Interest);
 const WorksWithTransition = WithAnimation(Works);
 
 function App() {
@@ -85,16 +85,12 @@ function App() {
               path="/skills"
               render={(props) => {
                 return (
-                  <SkillsWithTransition
-                    {...props}
-                    next="/interests"
-                    prev="/education"
-                  />
+                  <SkillsWithTransition {...props} next="/" prev="/education" />
                 );
               }}
               exact
             />
-            <Route
+            {/* <Route
               path="/interests"
               render={(props) => {
                 return (
@@ -102,7 +98,7 @@ function App() {
                 );
               }}
               exact
-            />
+            /> */}
           </Switch>
         </AnimatePresence>
       </Suspense>
