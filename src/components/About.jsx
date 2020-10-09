@@ -38,13 +38,25 @@ function About(props) {
           </p>
           <div className="social-icons">
             <div className="social-icon">
-              <FaLinkedinIn />
+              <a
+                href="https://www.linkedin.com/in/i-hossain-armadrillo-bba9501a0/"
+                className="text-white"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
             <div className="social-icon">
-              <FaFacebookF />
+              <a
+                href="https://web.facebook.com/Saiquit18/"
+                className="text-white"
+              >
+                <FaFacebookF />
+              </a>
             </div>
             <div className="social-icon">
-              <FaGithub />
+              <a href="https://github.com/saiquit" className="text-white">
+                <FaGithub />
+              </a>
             </div>
           </div>
         </div>
