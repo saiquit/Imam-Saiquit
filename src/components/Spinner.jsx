@@ -2,8 +2,8 @@ import React from "react";
 
 function Spinner() {
   return (
-    <div className="spinner" role="status">
-      <span className="sr-only">Loading...</span>
+    <div className="spinner_cover">
+      <div id="loader5"></div>
     </div>
   );
 }
