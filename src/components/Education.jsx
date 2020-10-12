@@ -19,7 +19,7 @@ function Education({ variant, pageTransition }) {
         <div className="resume-section-content">
           <h2 className="mb-5">Education</h2>
           {educations.map((education, i) => (
-            <SinglePost data={education} key={i} />
+            <SinglePost i={i} data={education} key={i} />
           ))}
         </div>
       </motion.section>

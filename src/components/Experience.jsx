@@ -18,7 +18,7 @@ function Experience(props) {
         <div className="resume-section-content">
           <h2 className="mb-5">Experience</h2>
           {experiences.map((data, i) => (
-            <SinglePost data={data} key={i} />
+            <SinglePost i={i} data={data} key={i} />
           ))}
         </div>
       </motion.section>

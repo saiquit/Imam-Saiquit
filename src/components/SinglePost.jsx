@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import React from "react";
 
-function SinglePost({ data: { title, subTitle, description, date } }) {
+function SinglePost({ data: { title, subTitle, description, date }, i }) {
   return (
-    <div className="d-flex flex-column p-5 border rounded flex-md-row justify-content-between mb-5">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 * i }}
+      className="d-flex flex-column p-5 border rounded flex-md-row justify-content-between mb-5"
+    >
       <div className="flex-grow-1">
         <h3 className="mb-0">{title}</h3>
         <div className="subheading mb-3">{subTitle}</div>
@@ -11,7 +17,7 @@ function SinglePost({ data: { title, subTitle, description, date } }) {
       <div className="flex-shrink-0">
         <span className="text-primary">{date}</span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

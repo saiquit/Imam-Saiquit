@@ -13,7 +13,12 @@ function About(props) {
         exit="exit"
         transition={props.pageTransition}
       >
-        <div className="resume-section-content">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ staggerChildren: 0.2 }}
+          className="resume-section-content"
+        >
           <h1 className="mb-0">
             Imam <span className="text-primary">Saiquit</span>
           </h1>
@@ -59,7 +64,7 @@ function About(props) {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.section>
     </>
   );
