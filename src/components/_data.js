@@ -64,5 +64,11 @@ export const works = {
       link: "https://react-watch-shop-gbbhfw59k.vercel.app/",
       imageUrl: "https://i.ibb.co/XtrSDFB/watchshop.png",
     },
+    {
+      title: "Movie App",
+      link: "https://movie-app-olive.vercel.app/",
+      imageUrl:
+        "https://i.ibb.co/jrxX8CD/screencapture-movie-app-olive-vercel-app-2020-10-29-19-19-37.png",
+    },
   ],
 };
